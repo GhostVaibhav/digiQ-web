@@ -8,6 +8,9 @@ import { AuthProvider } from "./contexts/AuthContext";
 import PrivateRoute from "./components/PrivateRoute";
 import ForgotPassword from "./components/ForgotPassword";
 import UpdateProfile from "./components/UpdateProfile";
+import Privacy from "./components/Privacy";
+import Terms_Conditions from "./components/Terms&Conditions";
+import Pricing from "./components/Pricing";
 
 function App() {
     return (
@@ -21,6 +24,9 @@ function App() {
                         <Route exact path="/login" component={Login}/>
                         <Route exact path="/signup" component={Signup}/>
                         <Route exact path="/forgot-password" component={ForgotPassword}/>
+                        <Route exact path="/privacy" component={Privacy}/>
+                        <Route exact path="/pricing" component={Pricing}/>
+                        <Route exact path="/terms&conditions" component={Terms_Conditions}/>
                     </Switch>
                 </AuthProvider>
             </Router>

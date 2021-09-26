@@ -56,21 +56,24 @@ export default function Navbar() {
                                         data-bs-toggle="dropdown"
                                         aria-expanded="false"
                                     >
-                                        Dropdown
+                                        
                                     </a>
                                     <ul
                                         className="dropdown-menu"
                                         aria-labelledby="navbarDropdown"
                                     >
                                         <li>
-                                            <a className="dropdown-item" href="/">
-                                                Action
-                                            </a>
+                                            <Link className="dropdown-item" to="/pricing">
+                                                Pricing
+                                            </Link>
+                                            <Link className="dropdown-item" to="/terms&conditions">
+                                                Terms & Conditions
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a className="dropdown-item" href="/">
-                                                Another action
-                                            </a>
+                                            <Link className="dropdown-item" to="/privacy">
+                                                Privacy Policy
+                                            </Link>
                                         </li>
                                         <li>
                                             <hr className="dropdown-divider" />
