@@ -1,10 +1,12 @@
 import React from "react";
+import { useAuth } from "../contexts/AuthContext";
 import {
     HashRouter as Router,
     Link
 } from "react-router-dom"
 
 export default function Navbar() {
+    const { currentUser} = useAuth();
     return (
         <div>
             <Router>
@@ -81,13 +83,15 @@ export default function Navbar() {
                                     </ul>
                                 </li>
                             </ul>
-                            <div className="d-flex">
+                            {!currentUser && <div className="d-flex">
                                 <Link to="/signup">
                                     <button className="btn btn-dark mx-2 shadow rounded-full">
                                         Get Started
                                     </button>
                                 </Link>
-                            </div>
+                            </div>}
+                            {currentUser && <div className="d-flex text-white">
+                                {currentUser.email}</div>}
                         </div>
                     </div>
                 </nav>
