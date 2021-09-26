@@ -24,7 +24,7 @@ export default function Dashboard() {
                     {error && <p className="card-text">{error}</p>}
                     <h6 className="card-subtitle mb-2 text-muted">Email: {currentUser.email}</h6>
                     <Link to="/update">
-                        <button className="btn btn-primary mx-2" variant="link" onClick={handleLogout}>
+                        <button className="btn btn-primary mx-2" variant="link">
                         Update Profile
                         </button>
                     </Link>

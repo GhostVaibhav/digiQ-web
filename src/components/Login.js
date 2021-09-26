@@ -35,7 +35,7 @@ export default function Login() {
                     <input type="password" className="form-control" id="exampleInputPassword1" autoComplete="new-password" ref={passwordRef} required />
                 </div>
                 <button disabled={loading} type="submit" className="w-100 btn btn-primary">
-                    {loading && <span class="spinner-border spinner-border-sm mx-1" role="status" aria-hidden="true"></span>}
+                    {loading && <span className="spinner-border spinner-border-sm mx-1" role="status" aria-hidden="true"></span>}
                     Login
                 </button>
                 <div className="w-100 text-center mt-3">
