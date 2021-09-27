@@ -18,9 +18,10 @@ jobs:
       with:
         node-version: 16.x
         cache: 'npm'
-    - name: Deploy application
-    - run: npm install
-    - run: npm run deploy
+    - name: Downloading dependencies
+      run: npm install
+    - name: Deploying application
+      run: npm run deploy
       env:
         REACT_APP_FIREBASE_APP_ID: ${{ secrets.REACT_APP_FIREBASE_APP_ID }}
         REACT_APP_FIREBASE_API_KEY: ${{ secrets.REACT_APP_FIREBASE_API_KEY }}
