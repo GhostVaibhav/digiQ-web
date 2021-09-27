@@ -14,11 +14,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js 16.x
-      uses: actions/setup-node@v2
+    - uses: actions/setup-node@v2
       with:
         node-version: 16.x
         cache: 'npm'
-    - env:
+      env:
         REACT_APP_FIREBASE_APP_ID: ${{ secrets.REACT_APP_FIREBASE_APP_ID }}
         REACT_APP_FIREBASE_API_KEY: ${{ secrets.REACT_APP_FIREBASE_API_KEY }}
         REACT_APP_FIREBASE_AUTH_DOMAIN: ${{ secrets.REACT_APP_FIREBASE_AUTH_DOMAIN }}
