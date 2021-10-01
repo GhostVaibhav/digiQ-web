@@ -6,7 +6,7 @@ import {
 } from "react-router-dom"
 
 export default function Navbar() {
-    const { currentUser} = useAuth();
+    const { currentUser } = useAuth();
     return (
         <div>
             <Router>
@@ -18,7 +18,7 @@ export default function Navbar() {
                         <Link
                             className="navbar-brand"
                             style={{ fontFamily: "Inter", fontWeight: 700, fontSize: "1.5rem" }}
-                            to="/"
+                            to="/home"
                         >
                             digiFin
                         </Link>
@@ -42,7 +42,7 @@ export default function Navbar() {
                                     <Link
                                         className="nav-link active"
                                         aria-current="page"
-                                        to="/"
+                                        to="/home"
                                     >
                                         Home
                                     </Link>

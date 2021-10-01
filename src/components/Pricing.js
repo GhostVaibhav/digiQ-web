@@ -14,7 +14,7 @@ export default function Pricing() {
                     <p class="card-text"><Link to="/">digiFin</Link> is licensed under <a href="https://github.com/GhostVaibhav/digifin-web-frontend/blob/main/LICENSE">MIT license</a> and is open to everyone.</p>
                 </div>
                 <div class="card-footer bg-light border-primary">
-                    <Link to="/signup" style={{textDecoration: "None"}}>Get Started</Link>
+                    <Link to="/signup" style={{ textDecoration: "None" }}>Get Started</Link>
                 </div>
             </div>
         </div>
