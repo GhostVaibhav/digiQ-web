@@ -7,7 +7,7 @@ export default function Team() {
     return (
         <div className="d-flex container my-4" style={{ fontFamily: "Inter" }}>
             <div className="w-50 mx-2">
-                <Link to="/" style={{ textDecoration: "None" }}>
+                <Link to="/team" style={{ textDecoration: "None" }}>
                     <div className="btn btn-outline-success d-flex">
                         <div className="card-body">
                             <div className="d-flex justify-content-between">
@@ -22,7 +22,7 @@ export default function Team() {
             {currentUser ? 
                 <div className="w-50 mx-2">
                     <Link to="/dashboard" style={{ textDecoration: "None" }}>
-                        <div className="btn btn-outline-success d-flex">
+                        <div className="btn btn-danger d-flex">
                             <div className="card-body">
                                 <div className="d-flex justify-content-between">
                                     <h2 className="fw-bold card-title">Go to dashboard</h2>
@@ -36,7 +36,7 @@ export default function Team() {
                 :
                 <div className="w-50 mx-2">
                     <Link to="/login" style={{ textDecoration: "None" }}>
-                        <div className="btn btn-outline-success d-flex">
+                        <div className="btn btn-danger d-flex">
                             <div className="card-body">
                                 <div className="d-flex justify-content-between">
                                     <h2 className="fw-bold card-title">Login / Signup</h2>

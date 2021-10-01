@@ -12,6 +12,8 @@ import Privacy from "./components/Privacy";
 import Terms_Conditions from "./components/Terms&Conditions";
 import Pricing from "./components/Pricing";
 import Home from "./components/Home";
+import IntroductionPage from "./components/IntroductionPage";
+import MeetTheTeam from "./components/MeetTheTeam";
 
 function App() {
     return (
@@ -29,6 +31,8 @@ function App() {
                         <Route exact path="/privacy" component={Privacy} />
                         <Route exact path="/pricing" component={Pricing} />
                         <Route exact path="/terms&conditions" component={Terms_Conditions} />
+                        <Route exact path="/introduction" component={IntroductionPage} />
+                        <Route exact path="/team" component={MeetTheTeam} />
                         <Route path="/home" component={Home} />
                     </Switch>
                 </AuthProvider>
